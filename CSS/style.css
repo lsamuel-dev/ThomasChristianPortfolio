@@ -1,0 +1,72 @@
+body {
+  background-color: var(--background-light);
+}
+.navbar {
+  background-color: var(--primary-blue);
+}
+h1 {
+  color: var(--text-dark);
+}
+
+h2 {
+  text-align: center;
+  margin: 40px 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.img {
+  max-height: 200px;
+}
+
+.carousel-item img {
+  width: 100%;
+  max-height: 450px; /* keeps images from getting too tall */
+  object-fit: contain; /* fits images nicely without cropping */
+}
+
+.btn-primary {
+  background-color: var(--cta-gold);
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* >670px: keep a single row, center-align vertically, show links, hide toggler */
+@media (min-width: 671px) {
+  .navbar .container-fluid {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .navbar-toggler {
+    display: none !important;
+  }
+  .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+}
+
+/* ≤670px: allow wrap, use real collapse/toggler */
+@media (max-width: 670px) {
+  .navbar .container-fluid {
+    flex-wrap: wrap;
+  }
+  .navbar-toggler {
+    display: block !important;
+  }
+  .navbar-collapse {
+    display: none;
+  }
+  .navbar-collapse.show {
+    display: block;
+  }
+}
