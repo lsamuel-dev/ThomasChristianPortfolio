@@ -10,7 +10,7 @@ One-page website showing Thomas Christian's portfolio of products, social media 
 
 # View Online
 
-- https://lsamuel1962-bot.github.io/Project1-ThomasChristianPortfolio/
+- https://lsamuel-dev.github.io/ThomasChristianPortfolio/
 
 # User Stories
 
